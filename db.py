@@ -45,7 +45,6 @@ def execute(sql, args=()):
         conn.close()
 
 
-# ---------- categories ----------
 
 def list_categories():
     return query("SELECT * FROM categories ORDER BY name")
@@ -69,7 +68,7 @@ def category_totals():
         GROUP BY c.id ORDER BY c.name""")
 
 
-# ---------- expenses ----------
+
 
 def add_expense(amount, date, category_id, note):
     execute("INSERT INTO expenses (amount, date, category_id, note) VALUES (?,?,?,?)",
@@ -102,8 +101,6 @@ def list_expenses(month=None, category_id=None):
     sql += " ORDER BY e.date DESC, e.id DESC"
     return query(sql, args)
 
-
-# ---------- reports (month = 'YYYY-MM') ----------
 
 def month_total(month):
     r = query("SELECT COALESCE(SUM(amount),0) t, COUNT(*) n FROM expenses WHERE substr(date,1,7)=?", (month,), one=True)

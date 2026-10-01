@@ -8,8 +8,8 @@ with frosted-glass ("glassmorphism") cards, gradient-filled buttons. No browser,
 python -m venv venv
 venv\Scripts\activate        # Windows   (Mac/Linux: source venv/bin/activate)
 pip install -r requirements.txt
-python seed_demo.py          # optional: adds 150 sample expenses
-python main.py                # launches the window (fixed size, 1100x700)
+python seed_demo.py         
+python main.py                
 ```
 
 `finance.db` is created automatically next to `main.py` on first run.

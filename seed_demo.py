@@ -1,6 +1,4 @@
-"""Optional: fill the DB with random demo expenses so charts have data.
-Run:  python seed_demo.py
-"""
+
 import random
 from datetime import date, timedelta
 

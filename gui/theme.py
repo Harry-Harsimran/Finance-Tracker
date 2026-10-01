@@ -1,17 +1,16 @@
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageTk
 
-# ---------- palette ----------
-BG_TOP_LEFT = "#0f172a"        # flat background (solid — see make_gradient note below)
-BG_BOTTOM_RIGHT = "#0f172a"    # same as above = no gradient, solid color
-ACCENT_PINK = "#6366f1"        # repurposed as the primary indigo accent (name is just a leftover identifier)
-ACCENT_PURPLE = "#4f46e5"      # darker indigo, used for headings
+BG_TOP_LEFT = "#0f172a"       
+BG_BOTTOM_RIGHT = "#0f172a"    
+ACCENT_PINK = "#6366f1"        
+ACCENT_PURPLE = "#4f46e5"      
 ACCENT_BLUE = "#3b82f6"
 ACCENT_TEAL = "#10b981"
 ACCENT_AMBER = "#f59e0b"
 
-CARD_BG = "#1e293b"           # flat card color
-CARD_BG_LIGHT = "#334155"     # entry/combobox/treeview field color
+CARD_BG = "#1e293b"          
+CARD_BG_LIGHT = "#334155"    
 TEXT_LIGHT = "#f1f5f9"
 TEXT_MUTED = "#94a3b8"
 
